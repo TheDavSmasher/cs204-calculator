@@ -1,3 +1,5 @@
+import java.security.SecureRandom;
+import java.util.Base64;
 
 class Calculator {
 
@@ -64,7 +66,10 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-        return null;
+        SecureRandom random = new SecureRandom();
+        byte[] ids = new byte[16];
+        random.nextBytes(ids);
+        return n + Base64.getEncoder().encodeToString(ids);
     }
 
 
