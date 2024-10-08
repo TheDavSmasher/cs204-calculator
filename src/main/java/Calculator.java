@@ -3,6 +3,7 @@ class Calculator {
 
     Calculator(){
         //I added a test comment
+        //So the workflow runs itself commit test
     }
 
     int add(int a , int b){
