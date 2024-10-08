@@ -24,10 +24,10 @@ public class Main {
                 case "divide":
                     System.out.println(calculator.divide(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2])));
                     break;
-                case "fibonacciNumberFinder":
+                case "fibonacci":
                     System.out.println(calculator.fibonacciNumberFinder(Integer.parseInt(tokens[1])));
                     break;
-                case "intToBinaryNumber":
+                case "binary":
                     System.out.println(calculator.intToBinaryNumber(Integer.parseInt(tokens[1])));
                     break;
                 default:
