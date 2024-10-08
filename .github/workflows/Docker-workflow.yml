@@ -18,10 +18,10 @@ jobs:
                   distribution: 'adopt'
                   architecture: x64
             - name: Clean
-              run: mvn -npt clean
+              run: mvn -ntp clean
             - name: Build
-              run: mvn -npt compile
+              run: mvn -ntp compile
             - name: Short tests
-              run: mvn -npt test -Dtest='CalculatorTest'
+              run: mvn -ntp test -Dtest='CalculatorTest'
             - name: Long tests
-              run: mvn -npt test -Dtest='CalculatorTestThorough'
+              run: mvn -ntp test -Dtest='CalculatorTestThorough'
